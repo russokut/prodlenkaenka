@@ -6,6 +6,11 @@ export interface Work {
 }
 
 export const works: Work[] = [
+  { id: '1Pqa6xmIZNi4AqLyr5tybRwU6G247SNea', title: 'Творческое занятие', studio: 'Творческая студия', date: '2024-03-05' },
+  { id: '16WiUT91ZoiN4baVO7GnFWEpl-9gWLm_X', title: 'Наши открытия', studio: 'Мини-сад', date: '2024-03-05' },
+  { id: '1NK36SoZ-P2KCEhCWVA28nj7gKHRL_L0S', title: 'Веселые игры', studio: 'Мини-сад', date: '2024-03-05' },
+  { id: '1gN6_bVZNmrx3qvJZ6tmm9h1gR8bNbL8f', title: 'Урок творчества', studio: 'Творческая студия', date: '2024-03-05' },
+  { id: '1vTALI_aWmQI0N6zNkzMdIBRkWcI2Lm8k', title: 'Будни в центре', studio: 'Жизнь центра', date: '2024-03-05' },
   { id: '1vH5CMmTkfYwLhHaaQJKJAcE0Kq348du_', title: 'Творческое вдохновение', studio: 'Творческая студия', date: '2024-03-03' },
   { id: '10z_ICrcaEQ4aGWin4UNOxTUkivA2B6A0', title: 'Осенний лес', studio: 'ИЗО-студия', date: '2024-02-20' },
   { id: '1mysF4dRuF-qDrfHvwN4m6o4kFHfYkRy2', title: 'Котик из глины', studio: 'Гончарная мастерская', date: '2024-02-18' },

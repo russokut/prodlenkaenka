@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { cn } from '../constants';
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
+import { galleryMedia } from '../data/gallery';
+
 export default function Home() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -443,14 +445,9 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              '10z_ICrcaEQ4aGWin4UNOxTUkivA2B6A0',
-              '1mysF4dRuF-qDrfHvwN4m6o4kFHfYkRy2',
-              '1edCBkm6Gw6W18wcAD_gJSE9V2wy7tYRr',
-              '1uAsb3U38ebeI5AuYQmZcPJvTuQwtRowG'
-            ].map((id, i) => (
+            {galleryMedia.slice(0, 4).map((item, i) => (
               <motion.div
-                key={i}
+                key={item.id}
                 whileHover={{ scale: 1.02 }}
                 className={cn(
                   "relative rounded-3xl overflow-hidden shadow-lg aspect-square",
@@ -459,8 +456,8 @@ export default function Home() {
                 )}
               >
                 <img 
-                  src={`https://lh3.googleusercontent.com/d/${id}`} 
-                  alt="Галерея" 
+                  src={item.url} 
+                  alt={item.title} 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
