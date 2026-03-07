@@ -8,8 +8,8 @@ import { works } from '../data/works';
 export default function Creativity() {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
-  // Take first 8 works for the main page
-  const galleryImages = works.slice(0, 8);
+  // Show all works
+  const galleryImages = works;
 
   const studios = [
     {

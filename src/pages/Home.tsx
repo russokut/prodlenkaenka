@@ -445,14 +445,14 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {galleryMedia.slice(0, 4).map((item, i) => (
+            {galleryMedia.slice(0, 8).map((item, i) => (
               <motion.div
                 key={item.id}
                 whileHover={{ scale: 1.02 }}
                 className={cn(
                   "relative rounded-3xl overflow-hidden shadow-lg aspect-square",
-                  i === 1 && "md:translate-y-8",
-                  i === 3 && "md:translate-y-8"
+                  (i === 1 || i === 5) && "md:translate-y-8",
+                  (i === 3 || i === 7) && "md:translate-y-8"
                 )}
               >
                 <img 

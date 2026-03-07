@@ -20,6 +20,7 @@ export const works: Work[] = [
   { id: '13349oQ2sT3cIeTjcWGlfyFHvcYRnLRv3', title: 'Ваза для мамы', studio: 'Гончарная мастерская', date: '2024-02-08' },
   { id: '1jifQMTjYfPxwEsDChiw5tzDz-F-NFk0F', title: 'Зимняя сказка', studio: 'ИЗО-студия', date: '2024-02-05' },
   { id: '1i6Z48QKNnzmG-EIgFM23_NR2Ih02m_d0', title: 'Птичка-невеличка', studio: 'Рукоделие', date: '2024-02-01' },
+  // Older works for the archive
   { id: '1sim8Ge-mdmRfSp4dJp2jkeZUDcZ_1P12', title: 'Первые шаги в гончарном деле', studio: 'Гончарная мастерская', date: '2024-01-25' },
   { id: '1UbkyJTqn2Q6MlX_ncixRuZfYkZMNon8z', title: 'Натюрморт с яблоками', studio: 'ИЗО-студия', date: '2024-01-20' },
   { id: '1jqevk0zkB3j5X00XEiNbEPOYw2uD4bkg', title: 'Аппликация "Лето"', studio: 'Рукоделие', date: '2024-01-15' },

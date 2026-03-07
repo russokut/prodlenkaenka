@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import express from 'express';
 import { createServer as createViteServer } from 'vite';
 import path from 'path';
@@ -25,8 +26,8 @@ async function startServer() {
   // API Endpoint for Contact Form
   app.post('/api/contact', async (req, res) => {
     const { name, phone, email, message } = req.body;
-    const botToken = "8712379622:AAHA2EDHK44S-CPcwd4CEXDUjsES271r6-w";
-    const chatIdRaw = "972984989";
+    const botToken = process.env.TELEGRAM_BOT_TOKEN?.trim();
+    const chatIdRaw = process.env.TELEGRAM_CHAT_ID?.trim();
 
     if (!botToken || !chatIdRaw) {
       console.warn('Telegram Bot Token or Chat ID is missing. Returning mock success for UI demo.');
